@@ -1,6 +1,5 @@
+-- You can also add new plugins here as well using the lazy syntax:
 return {
-  -- You can also add new plugins here as well:
-  -- Add plugins, the lazy syntax
   -- "andweeb/presence.nvim",
   -- {
   --   "ray-x/lsp_signature.nvim",

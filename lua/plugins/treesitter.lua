@@ -1,3 +1,6 @@
+if true then return {} end -- REMOVE THIS LINE TO ACTIVATE THIS FILE
+
+-- Exapmle customization of Treesitter
 return {
   "nvim-treesitter/nvim-treesitter",
   opts = function(_, opts)

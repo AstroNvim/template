@@ -1,3 +1,6 @@
+if true then return {} end -- REMOVE THIS LINE TO ACTIVATE THIS FILE
+
+-- Exapmle customization of Null-LS sources
 return {
   "jose-elias-alvarez/null-ls.nvim",
   opts = function(_, config)

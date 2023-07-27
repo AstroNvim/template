@@ -1,28 +1,30 @@
+-- You can simply override any internal plugins using Lazy, here are some example operations:
 return {
   -- customize alpha options
-  {
-    "goolord/alpha-nvim",
-    opts = function(_, opts)
-      -- customize the dashboard header
-      opts.section.header.val = {
-        " █████  ███████ ████████ ██████   ██████",
-        "██   ██ ██         ██    ██   ██ ██    ██",
-        "███████ ███████    ██    ██████  ██    ██",
-        "██   ██      ██    ██    ██   ██ ██    ██",
-        "██   ██ ███████    ██    ██   ██  ██████",
-        " ",
-        "    ███    ██ ██    ██ ██ ███    ███",
-        "    ████   ██ ██    ██ ██ ████  ████",
-        "    ██ ██  ██ ██    ██ ██ ██ ████ ██",
-        "    ██  ██ ██  ██  ██  ██ ██  ██  ██",
-        "    ██   ████   ████   ██ ██      ██",
-      }
-      return opts
-    end,
-  },
+  -- {
+  --   "goolord/alpha-nvim",
+  --   opts = function(_, opts)
+  --     -- customize the dashboard header
+  --     opts.section.header.val = {
+  --       " █████  ███████ ████████ ██████   ██████",
+  --       "██   ██ ██         ██    ██   ██ ██    ██",
+  --       "███████ ███████    ██    ██████  ██    ██",
+  --       "██   ██      ██    ██    ██   ██ ██    ██",
+  --       "██   ██ ███████    ██    ██   ██  ██████",
+  --       " ",
+  --       "    ███    ██ ██    ██ ██ ███    ███",
+  --       "    ████   ██ ██    ██ ██ ████  ████",
+  --       "    ██ ██  ██ ██    ██ ██ ██ ████ ██",
+  --       "    ██  ██ ██  ██  ██  ██ ██  ██  ██",
+  --       "    ██   ████   ████   ██ ██      ██",
+  --     }
+  --     return opts
+  --   end,
+  -- },
+
   -- You can disable default plugins as follows:
   -- { "max397574/better-escape.nvim", enabled = false },
-  --
+
   -- You can also easily customize additional setup of plugins that is outside of the plugin's setup call
   -- {
   --   "L3MON4D3/LuaSnip",
@@ -60,18 +62,6 @@ return {
   --       -- disable for .vim files, but it work for another filetypes
   --       Rule("a", "a", "-vim")
   --     )
-  --   end,
-  -- },
-  -- By adding to the which-key config and using our helper function you can add more which-key registered bindings
-  -- {
-  --   "folke/which-key.nvim",
-  --   config = function(plugin, opts)
-  --     require "plugins.configs.which-key"(plugin, opts) -- include the default astronvim config that calls the setup call
-  --     -- Add bindings which show up as group name
-  --     local wk = require "which-key"
-  --     wk.register({
-  --       b = { name = "Buffer" },
-  --     }, { mode = "n", prefix = "<leader>" })
   --   end,
   -- },
 }
