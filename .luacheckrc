@@ -1,7 +1,5 @@
 -- Global objects
 globals = {
-  "astronvim",
-  "astronvim_installation",
   "vim",
   "bit",
 }
