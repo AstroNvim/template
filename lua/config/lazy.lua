@@ -10,21 +10,18 @@ vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 -- Whether or not to use stable releases of AstroNvim
 local USE_STABLE = false
 
-local spec = {
-  -- TODO: remove branch v4 on release
-  { "AstroNvim/AstroNvim", branch = "v4", version = USE_STABLE and "*" or nil, import = "astronvim.plugins" },
-  -- { "AstroNvim/AstroNvim", version = "3.x", import = "astronvim.plugins" }, -- use this line to only get updates for v3 and avoid the breaking changes if v4 is released
-}
-if USE_STABLE then table.insert(spec, { import = "astronvim.lazy_snapshot" }) end -- pin plugins to known stable versions/commits
-
 require("lazy").setup {
-  spec = vim.list_extend(spec, {
+  spec = {
+    -- TODO: remove branch v4 on release
+    { "AstroNvim/AstroNvim", branch = "v4", version = USE_STABLE and "*" or nil, import = "astronvim.plugins" },
+    -- { "AstroNvim/AstroNvim", version = "3.x", import = "astronvim.plugins" }, -- use this line to only get updates for v3 and avoid the breaking changes if v4 is released
+    { import = "astronvim.lazy_snapshot", cond = USE_STABLE },
     -- AstroCommunity import any community modules here
     -- TODO: Remove branch v4 on release
     -- { "AstroNvim/astrocommunity", branch = "v4" },
     -- { import = "astrocommunity.pack.lua" },
     { import = "plugins" }, -- import/override with your plugins
-  }),
+  },
   defaults = {
     -- By default, only AstroNvim plugins will be lazy-loaded. Your custom plugins will load during startup.
     -- If you know what you're doing, you can set this to `true` to have all your custom plugins lazy-loaded by default.
