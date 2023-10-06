@@ -13,8 +13,7 @@ local USE_STABLE = false
 require("lazy").setup {
   spec = {
     -- TODO: remove branch v4 on release
-    { "AstroNvim/AstroNvim", branch = "v4", version = USE_STABLE and "*" or nil, import = "astronvim.plugins" },
-    -- { "AstroNvim/AstroNvim", version = "3.x", import = "astronvim.plugins" }, -- use this line to only get updates for v3 and avoid the breaking changes if v4 is released
+    { "AstroNvim/AstroNvim", branch = "v4", version = USE_STABLE and "^4" or nil, import = "astronvim.plugins" },
     { import = "astronvim.lazy_snapshot", cond = USE_STABLE },
     -- AstroCommunity import any community modules here
     -- TODO: Remove branch v4 on release
