@@ -14,20 +14,16 @@ require("lazy").setup {
   spec = {
     -- TODO: remove branch v4 on release
     { "AstroNvim/AstroNvim", branch = "v4", version = USE_STABLE and "^4" or nil, import = "astronvim.plugins" },
+    -- pin plugins to known working versions
     { import = "astronvim.lazy_snapshot", cond = USE_STABLE },
-    -- AstroCommunity import any community modules here
+    -- AstroCommunity: import any community modules here
     -- TODO: Remove branch v4 on release
     -- { "AstroNvim/astrocommunity", branch = "v4" },
     -- { import = "astrocommunity.pack.lua" },
-    { import = "plugins" }, -- import/override with your plugins
-  },
-  defaults = {
-    -- By default, only AstroNvim plugins will be lazy-loaded. Your custom plugins will load during startup.
-    -- If you know what you're doing, you can set this to `true` to have all your custom plugins lazy-loaded by default.
-    lazy = false,
+    -- import/override with your plugins
+    { import = "plugins" },
   },
   install = { colorscheme = { "astrodark", "habamax" } },
-  checker = { enabled = false }, -- automatically check for plugin updates
   performance = {
     rtp = {
       -- disable some rtp plugins, add more to your liking
