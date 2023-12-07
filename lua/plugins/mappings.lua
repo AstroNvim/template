@@ -12,11 +12,11 @@ return {
 
         -- navigate buffer tabs with `H` and `L`
         -- L = {
-        --   function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
+        --   function() require("astrocore.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
         --   desc = "Next buffer",
         -- },
         -- H = {
-        --   function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
+        --   function() require("atsrocore.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
         --   desc = "Previous buffer",
         -- },
 
