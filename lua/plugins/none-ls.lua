@@ -2,7 +2,7 @@ if true then return {} end -- REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- Example customization of Null-LS sources
 return {
-  "jose-elias-alvarez/null-ls.nvim",
+  "nvimtools/none-ls.nvim",
   opts = function(_, config)
     -- config variable is the default configuration table for the setup function call
     -- local null_ls = require "null-ls"
