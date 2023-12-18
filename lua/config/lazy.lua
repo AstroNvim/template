@@ -6,16 +6,10 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 
--- TODO: set to true on release
--- Whether or not to use stable releases of AstroNvim
-local USE_STABLE = false
-
 require("lazy").setup {
   spec = {
-    -- TODO: remove branch v4 on release
-    { "AstroNvim/AstroNvim", branch = "v4", version = USE_STABLE and "^4" or nil, import = "astronvim.plugins" },
-    -- pin plugins to known working versions
-    { import = "astronvim.lazy_snapshot", cond = USE_STABLE },
+    -- TODO: change `branch="v4"` to `version="^4"` on release
+    { "AstroNvim/AstroNvim", branch = "v4", import = "astronvim.plugins" },
     -- AstroCommunity: import any community modules here
     -- TODO: Remove branch v4 on release
     -- { "AstroNvim/astrocommunity", branch = "v4" },
