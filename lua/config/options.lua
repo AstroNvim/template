@@ -9,3 +9,4 @@
 -- vim.opt.wrap = false -- sets vim.opt.wrap
 
 -- vim.g.mapleader = " " -- sets vim.g.mapleader
+-- vim.g.icons_enabled = false -- disable icons in the UI (disable if no nerd font is available)
