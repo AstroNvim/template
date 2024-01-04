@@ -29,7 +29,7 @@ return {
   -- {
   --   "L3MON4D3/LuaSnip",
   --   config = function(plugin, opts)
-  --     require "plugins.configs.luasnip"(plugin, opts) -- include the default astronvim config that calls the setup call
+  --     require "astronvim.plugins.configs.luasnip"(plugin, opts) -- include the default astronvim config that calls the setup call
   --     -- add more custom luasnip configuration such as filetype extend or custom snippets
   --     local luasnip = require "luasnip"
   --     luasnip.filetype_extend("javascript", { "javascriptreact" })
@@ -38,7 +38,7 @@ return {
   -- {
   --   "windwp/nvim-autopairs",
   --   config = function(plugin, opts)
-  --     require "plugins.configs.nvim-autopairs"(plugin, opts) -- include the default astronvim config that calls the setup call
+  --     require "astronvim.plugins.configs.nvim-autopairs"(plugin, opts) -- include the default astronvim config that calls the setup call
   --     -- add more custom autopairs configuration such as custom rules
   --     local npairs = require "nvim-autopairs"
   --     local Rule = require "nvim-autopairs.rule"
