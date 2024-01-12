@@ -3,6 +3,7 @@ return {
   -- this guarantees that the community plugin specs are loaded before the user configuration
 
   -- This is a good place to do further customize the options set by the community plugins/packs
+  -- NOTICE: uncommenting below assumes you have the catppuccin AstroCommunity plugin imported in `lua/config/lazy.lua`
   -- {
   --   "catppuccin/nvim",
   --   opts = {
