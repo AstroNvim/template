@@ -15,17 +15,16 @@ if not lazy_loaded then
 end
 
 ---@type LazyConfig
-lazy.setup {
-  spec = {
-    -- TODO: change `branch="v4"` to `version="^4"` on release
-    { "AstroNvim/AstroNvim", branch = "v4", import = "astronvim.plugins" },
-    -- AstroCommunity: import any community modules here
-    -- TODO: Remove branch v4 on release
-    -- { "AstroNvim/astrocommunity", branch = "v4" },
-    -- { import = "astrocommunity.pack.lua" },
-    -- import/override with your plugins
-    { import = "plugins" },
-  },
+lazy.setup({
+  -- TODO: change `branch="v4"` to `version="^4"` on release
+  { "AstroNvim/AstroNvim", branch = "v4", import = "astronvim.plugins" },
+  -- AstroCommunity: import any community modules here
+  -- TODO: Remove branch v4 on release
+  -- { "AstroNvim/astrocommunity", branch = "v4" },
+  -- { import = "astrocommunity.pack.lua" },
+  -- import/override with your plugins
+  { import = "plugins" },
+} --[[@as LazySpec]], {
   install = { colorscheme = { "astrodark", "habamax" } },
   performance = {
     rtp = {
@@ -39,4 +38,4 @@ lazy.setup {
       },
     },
   },
-}
+} --[[@as LazyConfig]])
