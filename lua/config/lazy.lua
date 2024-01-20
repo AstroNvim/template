@@ -14,6 +14,7 @@ if not lazy_loaded then
   vim.cmd.quit()
 end
 
+---@type LazyConfig
 lazy.setup {
   spec = {
     -- TODO: change `branch="v4"` to `version="^4"` on release

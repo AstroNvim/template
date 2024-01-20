@@ -1,4 +1,5 @@
 -- You can simply override any internal plugins using Lazy, here are some example operations:
+---@type LazySpec
 return {
   -- customize alpha options
   -- {

@@ -1,4 +1,5 @@
 -- You can also add new plugins here as well using the lazy syntax:
+---@type LazySpec
 return {
   -- "andweeb/presence.nvim",
   -- {
