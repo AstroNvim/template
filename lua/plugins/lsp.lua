@@ -6,6 +6,15 @@ return {
   "AstroNvim/astrolsp",
   ---@type AstroLSPOpts
   opts = {
+    -- Configuration table of features provided by AstroLSP
+    features = {
+      autoformat = true, -- enable or disable auto formatting on start
+      codelens = true, -- enable/disable codelens refresh on start
+      diagnostics_mode = 3, -- diagnostic mode on start (0 = off, 1 = no signs/virtual text, 2 = no virtual text, 3 = off)
+      inlay_hints = false, -- enable/disable inlay hints on start
+      lsp_handlers = true, -- enable/disable setting of lsp_handlers
+      semantic_tokens = true, -- enable/disable semantic token highlighting
+    },
     -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
     diagnostics = {
       virtual_text = true,
