@@ -69,7 +69,7 @@ return {
         --   desc = "Declaration of current symbol",
         --   cond = "textDocument/declaration",
         -- },
-        -- ["<leader>uY"] = {
+        -- ["<Leader>uY"] = {
         --   function() require("astrolsp.toggles").buffer_semantic_tokens() end,
         --   desc = "Toggle LSP semantic highlight (buffer)",
         --   cond = function(client) return client.server_capabilities.semanticTokensProvider and vim.lsp.semantic_tokens end,
