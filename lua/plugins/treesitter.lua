@@ -1,6 +1,4 @@
-if true then return {} end -- REMOVE THIS LINE TO ACTIVATE THIS FILE
-
--- Example customization of Treesitter
+-- Customization of Treesitter
 ---@type LazySpec
 return {
   "nvim-treesitter/nvim-treesitter",
@@ -9,7 +7,8 @@ return {
     opts.ensure_installed = require("astrocore").list_insert_unique(
       opts.ensure_installed,
       "lua",
-      "vim"
+      "vim",
+      "vimdoc"
       -- add more arguments for adding more treesitter parsers
     )
   end,
