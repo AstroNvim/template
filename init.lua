@@ -14,7 +14,6 @@ if not lazy_loaded then
   vim.cmd.quit()
 end
 
----@type LazyConfig
 lazy.setup({
   {
     "AstroNvim/AstroNvim",
