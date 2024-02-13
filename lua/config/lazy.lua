@@ -14,6 +14,12 @@ if not lazy_loaded then
   vim.cmd.quit()
 end
 
+-- must configure leader key before Lazy is set up
+vim.g.mapleader = " "
+
+-- Set to false to disable icons (if no Nerd Font is available)
+vim.g.icons_enabled = true
+
 ---@type LazyConfig
 lazy.setup({
   -- TODO: change `branch="v4"` to `version="^4"` on release
