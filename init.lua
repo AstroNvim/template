@@ -26,11 +26,7 @@ lazy.setup({
       pin_plugins = nil, -- Default will pin plugins when tracking `version` of AstroNvim, set to true/false to override
     },
   },
-  -- AstroCommunity: import any community modules here
-  -- TODO: Remove branch v4 on release
-  -- { "AstroNvim/astrocommunity", branch = "v4" },
-  -- { import = "astrocommunity.pack.lua" },
-  -- import/override with your plugins
+  { import = "community" },
   { import = "plugins" },
 } --[[@as LazySpec]], {
   install = { colorscheme = { "astrodark", "habamax" } },
