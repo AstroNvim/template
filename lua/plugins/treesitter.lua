@@ -1,6 +1,7 @@
 if true then return {} end -- REMOVE THIS LINE TO ACTIVATE THIS FILE
 
--- Example customization of Treesitter
+-- Customize Treesitter
+
 ---@type LazySpec
 return {
   "nvim-treesitter/nvim-treesitter",

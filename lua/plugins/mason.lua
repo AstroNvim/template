@@ -1,6 +1,7 @@
 if true then return {} end -- REMOVE THIS LINE TO ACTIVATE THIS FILE
 
--- Example customization of mason plugins
+-- Customize Mason plugins
+
 ---@type LazySpec
 return {
   -- use mason-lspconfig to configure LSP installations

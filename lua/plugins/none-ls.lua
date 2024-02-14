@@ -1,6 +1,7 @@
 if true then return {} end -- REMOVE THIS LINE TO ACTIVATE THIS FILE
 
--- Example customization of Null-LS sources
+-- Customize None-ls sources
+
 ---@type LazySpec
 return {
   "nvimtools/none-ls.nvim",
