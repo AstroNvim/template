@@ -1,5 +1,3 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- AstroCore provides a central place to modify mappings, vim options, autocommands, and more!
 -- Configuration documentation can be found with `:h astrocore`
 -- NOTE: We highly recommend setting up the Lua Language Server (`:LspInstall lua_ls`)
@@ -44,18 +42,6 @@ return {
     mappings = {
       -- first key is the mode
       n = {
-        -- second key is the lefthand side of the map
-
-        -- navigate buffer tabs with `H` and `L`
-        -- L = {
-        --   function() require("astrocore.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
-        --   desc = "Next buffer",
-        -- },
-        -- H = {
-        --   function() require("astrocore.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
-        --   desc = "Previous buffer",
-        -- },
-
         -- mappings seen under group name "Buffer"
         ["<Leader>bD"] = {
           function()
@@ -70,6 +56,10 @@ return {
         ["<Leader>b"] = { desc = "Buffers" },
         -- quick save
         -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+        -- IMPORTANT: In this way you can create a new nested section.
+        ["<leader>N"] = { name = " Personal files" },
+        ["<leader>Nn"] = { "<CMD>e C:/Users/User/.config/nvim/Notes/notes.md<CR>", desc = "Personal Notes" },
+        ["<leader>Nj"] = { "<CMD>e C:/Users/User/.config/nvim/Notes/JobNotes.md<CR>", desc = "Job Notes" },
       },
       t = {
         -- setting a mapping to false will disable it
