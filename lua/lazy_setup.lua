@@ -8,6 +8,7 @@ require("lazy").setup({
       maplocalleader = ",", -- This ensures the localleader key must be configured before Lazy is set up
       icons_enabled = true, -- Set to false to disable icons (if no Nerd Font is available)
       pin_plugins = nil, -- Default will pin plugins when tracking `version` of AstroNvim, set to true/false to override
+      auto_update_pinned = false, -- Automatically run a second `:Lazy update` after AstroNvim updates to update pinned plugins
     },
   },
   { import = "community" },
