@@ -12,6 +12,7 @@ return {
         "lua_ls",
         "omnisharp",
         "tsserver",
+        "angularls"
         -- add more arguments for adding more language servers
       })
     end,
@@ -30,9 +31,25 @@ return {
   },
   {
     "jay-babu/mason-nvim-dap.nvim",
-    -- overrides `require("mason-nvim-dap").setup(...)`
+    -- require("mason-nvim-dap").setup({
+    --   ensure_installed = {"netcoredbg"},
+    --   automatic_installation = false,
+    --   handlers = {
+    --    function (config)
+    --       require("mason-nvim-dap").default_setup(config)
+    --    end,
+    --     cs = function (config)
+    --       config.adapters = {
+    --         type = "executable",
+    --         command = vim.fn.exepath("netcoredbg"),
+    --         args = { '--interpreter=vscode' }
+    --       }
+    --       require('mason-nvim-dap').default_setup(config) -- don't forget this!
+    --     end
+    --   }
+    -- })
     opts = function(_, opts)
-      -- add more things to the ensure_installed table protecting against community packs modifying it
+    --   -- add more things to the ensure_installed table protecting against community packs modifying it
       opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
         "netcoredbg",
         -- add more arguments for adding more debuggers

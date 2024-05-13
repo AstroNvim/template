@@ -57,9 +57,9 @@ return {
         -- quick save
         -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
         -- IMPORTANT: In this way you can create a new nested section.
-        ["<leader>N"] = { name = " Personal files" },
-        ["<leader>Nn"] = { "<CMD>e C:/Users/User/.config/nvim/Notes/notes.md<CR>", desc = "Personal Notes" },
-        ["<leader>Nj"] = { "<CMD>e C:/Users/User/.config/nvim/Notes/JobNotes.md<CR>", desc = "Job Notes" },
+        -- ["<leader>N"] = { name = " Personal files" },
+        -- ["<leader>Nn"] = { "<CMD>e C:/Users/User/.config/nvim/Notes/notes.md<CR>", desc = "Personal Notes" },
+        -- ["<leader>Nj"] = { "<CMD>e C:/Users/User/.config/nvim/Notes/JobNotes.md<CR>", desc = "Job Notes" },
       },
       t = {
         -- setting a mapping to false will disable it

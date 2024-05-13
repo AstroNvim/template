@@ -1,9 +1,10 @@
 return {
   {
     "nvim-neorg/neorg",
+    version = "v7.0.0",
     run = ":Neorg sync-parsers",
-    dependencies ={
-      "vhyrro/luarocks.nvim"
+    dependencies = {
+      "luarocks.nvim",
     },
     config = function()
       require("neorg").setup {
@@ -14,14 +15,14 @@ return {
             config = {
               workspaces = {
                 work = "F:/notes/work",
-                personal = "F:/notes/personal"
+                personal = "F:/notes/personal",
               },
-              default_workspace ="personal"
-            }
-          }
-        }
+              default_workspace = "personal",
+            },
+          },
+        },
       }
     end,
-    cmd = "Neorg"
-  }
+    cmd = "Neorg",
+  },
 }
