@@ -57,7 +57,8 @@ return {
         -- quick save
         -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
         -- IMPORTANT: In this way you can create a new nested section.
-        -- ["<leader>N"] = { name = " Personal files" },
+        ["<leader>N"] = { name = " Personal commands" },
+        ["<leader>Nn"] = { "<CMD>cd %:p:h<CR>", desc = "Move to open file directory" },
         -- ["<leader>Nn"] = { "<CMD>e C:/Users/User/.config/nvim/Notes/notes.md<CR>", desc = "Personal Notes" },
         -- ["<leader>Nj"] = { "<CMD>e C:/Users/User/.config/nvim/Notes/JobNotes.md<CR>", desc = "Job Notes" },
       },
