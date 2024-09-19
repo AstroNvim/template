@@ -1,5 +1,3 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- You can also add or configure plugins by creating files in this `plugins/` folder
 -- Here are some examples:
 
@@ -8,7 +6,6 @@ return {
 
   -- == Examples of Adding Plugins ==
 
-  "andweeb/presence.nvim",
   {
     "ray-x/lsp_signature.nvim",
     event = "BufRead",
@@ -82,4 +79,11 @@ return {
       )
     end,
   },
+
+  { "google/vim-jsonnet", ft = "jsonnet" },
+  {
+    "ruifm/gitlinker.nvim",
+    event = "BufRead",
+    config = function() require("gitlinker").setup() end,
+  }
 }
