@@ -7,5 +7,10 @@ return {
         leave_dirs_open = true,    -- This is the key: prevents collapsing
       },
     },
+    window = {
+      mappings = {
+        ["Z"] = "expand_all_nodes", -- Map Shift+Z to Expand All
+      },
+    },
   },
 }
